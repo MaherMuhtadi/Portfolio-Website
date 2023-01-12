@@ -3,6 +3,13 @@ body {
     color: rgb(171, 178, 191);
     font-family: "Ubuntu";
     font-size: medium;
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
 }
 
 main {
@@ -13,6 +20,10 @@ main {
 header {
     position: fixed;
     top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(30, 34, 39);
 }
 
@@ -22,6 +33,11 @@ footer {
     padding-bottom: 6px;
     background-color: rgb(30, 34, 39);
     text-align: center;
+}
+
+#menu-row {
+    width: 95%;
+    text-align: end;
 }
 
 button {
@@ -37,13 +53,40 @@ button:hover {
 
 .menu-button {
     border: none;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 12px;
     border-radius: 6px;
 }
 
 .menu-button:hover {
     background-color: rgb(50, 56, 66);
+}
+
+#dropdown {
+    position: relative;
+    display: none;
+    padding: 12px;
+}
+
+#dropdown-content {
+    position: absolute;
+    display: none;
+    border-radius: 6px;
+    right: 0;
+    margin-top: 12px;
+    box-shadow: -2px 2px 2px rgb(20, 25, 30);
+    background-color: rgb(32, 36, 41);
+}
+
+#dropdown:hover #dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+@media only screen and (width <= 450px) {
+    #expanded-menu {display: none;}
+    #dropdown {display: initial;}
 }
 
 .main-button {
@@ -81,8 +124,8 @@ a:hover {
 #logo {
     max-width: 114px;
     width:100%;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     transition: all 200ms;
 }
 
@@ -94,4 +137,8 @@ a:hover {
     font-size: large;
     font-weight: bold;
     margin-bottom: 24px;
+}
+
+.content {
+    padding: 12px;
 }

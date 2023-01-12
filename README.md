@@ -5,8 +5,9 @@
 </div>
 
 ## Description
-This repository contains the source code of my personal portfolio website, [maher-m.com](https://maher-m.com/).
-The website consists of responsive webpages built using CSS and [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
+This repository contains the source code of my Personal Portfolio Website, [maher-m.com](https://maher-m.com/).
+
+The website consists of responsive webpages built using CSS styles, media queries and the front-end framework [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
 
 ---
-Last Updated: January 09, 2023
+Last Updated: January 12, 2023

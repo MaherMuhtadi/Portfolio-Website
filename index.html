@@ -13,20 +13,30 @@
 
 <body>
 
-    <header class="container-fluid">
-        <div class="row">
-            <a class="col-lg-2 col align-self-center" href="#">
-                <img id="logo" src="images/logo.png" alt="Homepage">
-            </a>
-            <button class="col-lg-1 offset-lg-7 col align-self-center menu-button" onclick="window.alert('Work in progress')">COURSES</button>
-            <button class="col-lg-1 col align-self-center menu-button" onclick="window.open('https://github.com/MaherMuhtadi?tab=repositories', '_self')">PROJECTS</button>
-            <button class="col-lg-1 col align-self-center menu-button" onclick="window.alert('Work in progress')">INTERESTS</button>
+    <header>
+        <a href="#">
+            <img id="logo" src="images/logo.png" alt="Homepage">
+        </a>
+        <div id="menu-row">
+            <div id="dropdown">
+                <img src="images/dropdown.png" alt="Dropdown">
+                <div id="dropdown-content">
+                    <button class="menu-button" onclick="window.alert('Work in progress')">COURSES</button>
+                    <button class="menu-button" onclick="window.open('https://github.com/MaherMuhtadi?tab=repositories', '_self')">PROJECTS</button>
+                    <button class="menu-button" onclick="window.alert('Work in progress')">INTERESTS</button>
+                </div>
+            </div>
+            <div id="expanded-menu">
+                <button class="menu-button" onclick="window.alert('Work in progress')">COURSES</button>
+                <button class="menu-button" onclick="window.open('https://github.com/MaherMuhtadi?tab=repositories', '_self')">PROJECTS</button>
+                <button class="menu-button" onclick="window.alert('Work in progress')">INTERESTS</button>
+            </div>
         </div>
     </header>
 
     <main class="container-fluid">
         <div class="row">
-            <div class="col-lg-5 offset-lg-1 align-self-center">
+            <div class="col-lg-5 offset-lg-1 align-self-center content">
                 <h1>I am Maher Muhtadi</h1>
                 <div class="subheading">a third year Computer Science student at <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>, Canada</div>
 
@@ -36,7 +46,7 @@
 
                 <button class="main-button" onclick="window.open('Resume.pdf')">View Resume</button>
             </div>
-            <div class="col-lg-5 align-self-center" style="text-align: center;">
+            <div class="col-lg-5 align-self-center content" style="text-align:center;">
                 <img style="max-width:550px; width:100%;" src="images/art.png" alt="Maher">
             </div>
         </div>
