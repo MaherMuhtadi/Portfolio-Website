@@ -84,7 +84,7 @@ button:hover {
     align-content: center;
 }
 
-@media only screen and (width <= 450px) {
+@media only screen and (max-width: 450px) {
     #expanded-menu {display: none;}
     #dropdown {display: initial;}
 }
