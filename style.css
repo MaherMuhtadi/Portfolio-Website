@@ -13,8 +13,15 @@ body::-webkit-scrollbar {
 }
 
 main {
-    margin-top: 15%;
-    margin-bottom: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 1050px) {
+    main {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
 }
 
 header {
@@ -133,12 +140,17 @@ a:hover {
     transform: scale(1.1);
 }
 
-.subheading {
-    font-size: large;
+h1 {
+    color: rgb(86, 182, 194);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: larger;
     font-weight: bold;
     margin-bottom: 24px;
 }
 
 .content {
-    padding: 24px;
+    padding: 30px;
 }
