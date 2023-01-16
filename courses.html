@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-    <title>Maher's Portfolio</title>
+    <title>Courses | Maher's Portfolio</title>
 
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -14,42 +14,45 @@
 <body>
 
     <header>
-        <a href="#top">
+        <a href=".">
             <img id="logo" src="images/logo.png" alt="Homepage">
         </a>
         <div id="menu-row">
             <div id="dropdown">
                 <img src="images/dropdown.png" alt="Dropdown">
                 <div id="dropdown-content">
-                    <button class="menu-button" onclick="window.open('courses.html', '_self')">COURSES</button>
+                    <button class="menu-button" onclick="window.open('#top', '_self')">COURSES</button>
                     <button class="menu-button" onclick="window.open('https://github.com/MaherMuhtadi?tab=repositories', '_self')">PROJECTS</button>
                     <button class="menu-button" onclick="window.alert('Work in progress')">INTERESTS</button>
                 </div>
             </div>
             <div id="expanded-menu">
-                <button class="menu-button" onclick="window.open('courses.html', '_self')">COURSES</button>
+                <button class="menu-button" onclick="window.open('#top', '_self')">COURSES</button>
                 <button class="menu-button" onclick="window.open('https://github.com/MaherMuhtadi?tab=repositories', '_self')">PROJECTS</button>
                 <button class="menu-button" onclick="window.alert('Work in progress')">INTERESTS</button>
             </div>
         </div>
     </header>
 
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 offset-lg-1 align-self-center content">
-                <h1>I am Maher Muhtadi</h1>
-                <h2>a third year Computer Science student at <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>, Canada</h2>
+    <main class="content">
+        <h1>Relevant Coursework</h1>
+        <h2>for leveling up in my Computer Science journey</h2>
 
-                <p>I am learning and growing as a developer, and am eager to apply my skills and knowledge in a professional setting.
-                I enjoy working on side projects using different languages and tools but my favorite programming language is Python.
-                In addition to programming, I like photography, watching shows, playing video games and working out.</p>
+        <p>As a growing developer seeking to learn new things everyday, 
+        I am working my way through the wide range of courses offered to undergraduate Computer Science students 
+        at <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>.</p>
 
-                <button class="main-button" onclick="window.open('Resume.pdf')">View Resume</button>
-            </div>
-            <div class="col-lg-5 align-self-center content" style="text-align:center;">
-                <img style="max-width:550px; width:100%;" src="images/art.png" alt="Maher">
-            </div>
-        </div>
+        Here is a list of all the relevant courses I successfully completed:
+        <ul>
+            <li><details>
+            <summary>Computer Science I</summary>
+            <p>An introductory programming course designed to introduce fundamental Computer Science concepts 
+            such as abstraction, modelling and algorithm design. Emphasis is placed on producing correct software.</p>
+            </li></details>
+        </ul>
+        
+        <em>More courses to be added here</em>
+        
     </main>
 
     <footer class="container-fluid">
