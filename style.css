@@ -54,6 +54,10 @@ button {
     font-size: medium;
 }
 
+.selected {
+    color: rgb(52, 83, 141);
+}
+
 button:hover {
     color: rgb(119, 166, 255);
 }
@@ -151,7 +155,7 @@ h2 {
     width: fit-content;
     padding-bottom: 12px;
     border-bottom: 1px solid rgb(127, 132, 142);;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 .content {
