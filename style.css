@@ -154,10 +154,64 @@ h2 {
     font-weight: bold;
     width: fit-content;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgb(127, 132, 142);;
+    border-bottom: 1px solid rgb(127, 132, 142);
     margin-bottom: 24px;
+}
+
+h3 {
+    font-size: large;
+    font-weight: bold;
+    padding-top: 12px;
+    margin-top: 24px;
 }
 
 .content {
     padding: 30px;
+}
+
+ul {
+    width: 75%;
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 960px) {
+    ul {width: 100%;}
+}
+
+details {
+    border: 2px solid rgb(44, 49, 60);
+    border-radius: 6px;
+    margin: 24px;
+    transition: all 200ms;
+}
+
+@media only screen and (min-width: 960px) {
+    details:hover {
+        transform: scale(1.05);
+    }
+}
+
+summary {
+    list-style: none;
+    background-color: rgb(44, 49, 60);
+    padding: 12px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before { 
+    content: "➕ ";
+}
+
+details[open] summary::before { 
+    content: "➖ ";
+}
+
+details > p {
+    margin: 12px;
 }
