@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
 </head>
 
 <body>
 
     <header>
-        <a href=".">
-            <img id="logo" src="images/logo.png" alt="Homepage">
-        </a>
+        <img id="logo" src="images/logo.png" alt="Homepage" onclick="window.open('.', '_self')">
+        <img id="theme" src="images/moon.png" alt="Theme" onclick="toggle_theme()">
         <div id="menu-row">
             <div id="dropdown">
                 <img src="images/dropdown.png" alt="Dropdown">
@@ -42,9 +43,9 @@
         I am working my way through the wide range of courses offered to undergraduate Computer Science students 
         at <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>.</p>
 
-        <h3>Here is a list of all the relevant courses I successfully completed:</h3>
-
         <ul>
+            <h3>Here is a list of all the relevant courses I successfully completed:</h3>
+            
             <li><details>
             <summary id="cps109">CPS 109 - Computer Science I</summary>
             <p>An introductory programming course designed to introduce fundamental Computer Science concepts
