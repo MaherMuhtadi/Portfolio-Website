@@ -151,6 +151,7 @@ button:hover {
     padding: 6px;
     border: 2px solid;
     border-radius: 6px;
+    margin-right: 6px;
     transition: all 200ms;
     border-color: var(--button);
 }

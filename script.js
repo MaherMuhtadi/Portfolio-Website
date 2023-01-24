@@ -2,6 +2,7 @@ function init_theme() {
     /**
      * chooses theme for the webpages according to saved preference
      */
+
     if (localStorage.getItem("theme") == "light") {
         document.body.classList.add("light");
         // switch images to their light theme counterpart by retrieving them from the 'light' subdirectory
@@ -17,6 +18,7 @@ function toggle_theme() {
      * toggles between light and dark theme of the site
      * and saves the theme preference in the local storage of browser
      */
+
     let images = document.getElementsByTagName("img");
     
     if (document.body.classList.contains("light")) {
@@ -34,5 +36,24 @@ function toggle_theme() {
             images[i].src = images[i].src.replace("dark/", "light/");
         }
         localStorage.setItem("theme", "light");
+    }
+}
+
+function details_toggle(open=true) {
+    /**
+     * opens or closes all details elements depending on the boolean argument
+     * @param  {boolean} open indicates whether to open all details elements
+     */
+
+    let details = document.getElementsByTagName("details");
+    if (open) {
+        for (var i = 0; i < details.length; i++) {
+            details[i].setAttribute("open", true);
+        }
+    }
+    else {
+        for (var i = 0; i < details.length; i++) {
+            details[i].removeAttribute("open");
+        }
     }
 }
