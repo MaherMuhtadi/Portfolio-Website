@@ -90,8 +90,7 @@ h2 {
 h3 {
     font-size: large;
     font-weight: bold;
-    padding-top: 12px;
-    margin-top: 24px;
+    margin-bottom: 12px;
 }
 
 #menu-row {
@@ -195,6 +194,8 @@ a:hover {
 
 .content {
     padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #theme {
@@ -213,8 +214,10 @@ ul {
     width: 75%;
     list-style: none;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+#expand-collapse {
+    text-align: end;
 }
 
 details {
@@ -258,6 +261,7 @@ details > p {
 @media only screen and (max-width: 455px) {
     #expanded-menu {display: none;}
     #dropdown {display: initial;}
+    #expand-collapse {text-align: center;}
     summary {font-size: small;}
 }
 
