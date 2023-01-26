@@ -9,7 +9,7 @@
     --menu: rgb(30, 34, 39);
     --menu-button-hover: rgb(50, 56, 66);
     --dropdown: rgb(32, 36, 41);
-    --dropdown-shadow: rgb(20, 25, 30);
+    --shadow: rgb(20, 25, 30);
     --link: rgb(85, 169, 141);
     --link-hover: rgb(127, 255, 212);
     --details: rgb(44, 49, 60);
@@ -25,7 +25,7 @@
     --menu: rgb(250, 249, 247);
     --menu-button-hover: rgb(235, 231, 225);
     --dropdown: rgb(252, 251, 249);
-    --dropdown-shadow: rgb(156, 156, 154);
+    --shadow: rgb(156, 156, 154);
     --link: rgb(181, 142, 12);
     --link-hover: rgb(231, 181, 17);
     --details: rgb(231, 226, 216);
@@ -61,6 +61,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--menu);
+    box-shadow: 0px 2px 12px 2px var(--shadow);
 }
 
 footer {
@@ -135,7 +136,7 @@ button:hover {
     border-radius: 6px;
     right: 0;
     margin-top: 12px;
-    box-shadow: -2px 2px 2px var(--dropdown-shadow);
+    box-shadow: -2px 2px 6px 2px var(--shadow);
     background-color: var(--dropdown);
 }
 
@@ -176,10 +177,6 @@ a:hover {
     transition: all 200ms;
 }
 
-.link-icon:hover {
-    transform: scale(1.3);
-}
-
 #logo {
     max-width: 114px;
     width:100%;
@@ -206,7 +203,7 @@ a:hover {
     transition: all 200ms;
 }
 
-#theme:hover  {
+.link-icon:hover, #theme:hover  {
     transform: scale(1.3);
 }
 
@@ -270,5 +267,8 @@ details > p {
 }
 
 @media only screen and (min-width: 960px) {
-    details:hover {transform: scale(1.05);}
+    details:hover {
+        transform: scale(1.05);
+        box-shadow: -2px 2px 12px 2px var(--shadow);
+    }
 }
