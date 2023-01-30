@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-    <title>Maher's Portfolio</title>
+    <title>Interests | Maher's Portfolio</title>
 
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <img id="logo" src="images/dark/logo.png" alt="Homepage" onclick="window.open('#top', '_self')">
+        <img id="logo" src="images/dark/logo.png" alt="Homepage" onclick="window.open('.', '_self')">
         <img id="theme" src="images/dark/toggle.png" alt="Theme" onclick="toggle_theme()">
         <div id="menu-row">
             <div id="dropdown">
@@ -24,33 +24,19 @@
                 <div id="dropdown-content">
                     <button class="menu-button" onclick="window.open('courses.html', '_self')">COURSES</button>
                     <button class="menu-button" onclick="window.open('https://github.com/MaherMuhtadi?tab=repositories', '_self')">PROJECTS</button>
-                    <button class="menu-button" onclick="window.open('interests.html', '_self')">INTERESTS</button>
+                    <button class="menu-button selected" onclick="window.open('#top', '_self')">INTERESTS</button>
                 </div>
             </div>
             <div id="expanded-menu">
                 <button class="menu-button" onclick="window.open('courses.html', '_self')">COURSES</button>
                 <button class="menu-button" onclick="window.open('https://github.com/MaherMuhtadi?tab=repositories', '_self')">PROJECTS</button>
-                <button class="menu-button" onclick="window.open('interests.html', '_self')">INTERESTS</button>
+                <button class="menu-button selected" onclick="window.open('#top', '_self')">INTERESTS</button>
             </div>
         </div>
     </header>
 
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 offset-lg-1 align-self-center content">
-                <h1>I am Maher Muhtadi</h1>
-                <h2>a third year Computer Science student at <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>, Canada</h2>
-
-                <p>I am learning and growing as a developer, and am eager to apply my skills and knowledge in a professional setting.
-                I enjoy working on side projects using different languages and tools but my favorite programming language is Python.
-                In addition to programming, I like photography, watching shows, playing video games and working out.</p>
-
-                <button class="main-button" onclick="window.open('Resume.pdf')">View Resume</button>
-            </div>
-            <div class="col-lg-5 align-self-center content" style="text-align:center;">
-                <img style="max-width:550px; width:100%;" src="images/art.png" alt="Maher">
-            </div>
-        </div>
+    <main class="content">
+        <p>Work in progress</p>
     </main>
 
     <footer class="container-fluid">
