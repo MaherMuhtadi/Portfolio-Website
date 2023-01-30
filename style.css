@@ -197,7 +197,7 @@ a:hover {
 
 #theme {
     box-sizing: content-box;
-    width: 24px;
+    width: 30px;
     padding: 6px;
     border: none;
     transition: all 200ms;
@@ -255,7 +255,7 @@ details > p {
     }
 }
 
-@media only screen and (max-width: 455px) {
+@media only screen and (max-width: 470px) {
     #expanded-menu {display: none;}
     #dropdown {display: initial;}
     #expand-collapse {text-align: center;}
