@@ -12,7 +12,7 @@ This repository contains the source code of my Personal Portfolio Website, [mahe
 
 <img src="https://user-images.githubusercontent.com/99841502/214224414-0d198d78-4a08-46d0-be77-b56b14d1268a.png" alt="responsive" style="width:60%">
 
-2. The website consists of responsive and mobile-friendly webpages built using CSS styles, media queries and the front-end framework [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
+2. The website consists of responsive, mobile-friendly and cross-browser compatible webpages built using CSS styles, media queries and the front-end framework [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
 
 <img src="https://user-images.githubusercontent.com/99841502/214223192-10551e9e-825c-46db-88e3-1bd2c6c3a7e8.png" alt="responsive" style="width:50%">
 
