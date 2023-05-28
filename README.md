@@ -16,7 +16,5 @@ This repository contains the source code of my Personal Portfolio Website, [mahe
 
 <img src="https://user-images.githubusercontent.com/99841502/214223192-10551e9e-825c-46db-88e3-1bd2c6c3a7e8.png" alt="responsive" style="width:50%">
 
-3. The website uses .htaccess file to remove .html file extension from webpage URLs.
-
 ---
-Last Updated: January 30, 2023
+Last Updated: May 27, 2023
