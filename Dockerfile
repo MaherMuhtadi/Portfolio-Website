@@ -1,8 +1,5 @@
-# Uses the official PHP image as the base image
-FROM php:apache
+# Uses the official httpd image as the base image
+FROM httpd
 
 # Copies the app source code to the appropriate directory in the image
-COPY . /var/www/html/
-
-# Exposes the port that the Apache server will listen to
-EXPOSE 80
+COPY . /usr/local/apache2/htdocs/
